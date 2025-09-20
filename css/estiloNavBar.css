@@ -1,0 +1,76 @@
+/* Seletor Universal (Aplica em toda a página) */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.divHeader {
+    text-align: center; /* Define o alinhamento como centralizado */
+    padding-top: 10px; /* Define espaçamento superior */
+    padding-bottom: 10px; /* Define espaçamento inferior */
+    margin-bottom: 20px; /* Define margem inferior */
+}
+
+.divConteudo {
+    margin: 50px;
+    display: flex; /* Ativa o FlexBox */
+    flex-wrap: wrap; /* Permite quebrar linha se faltar espaço */
+    justify-content: center; /* Centraliza os elementos da div */
+    gap: 20px; /* Espaçamento entre os produtos */
+    padding: 20px; /*Espaçamento Interno */
+    flex: 1;
+}
+
+.divFooter {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: fixed; /* Fixar o elemento na tela */
+    bottom: 0; /* Gruda no fundo da janela */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Ocupa toda a largura da página */
+}
+
+h2, p {
+    margin: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    padding-bottom: 50px;
+}
+
+ul {
+    list-style-type: none; /* Remove os marcadores padrões da lista (bolinhas) */
+    margin: 0; /* Remove a margem padrão da lista */
+    padding: 0; /* Remove o espaçamento padrão da lista */
+    background-color: #333; /* Define a cor de fundo da NavBar */
+    overflow: hidden; /*Garante que fundo da NavBar contenha os elementos flutuantes */
+    position: sticky; /*Faz a barra "grudar" no topo ao rolar a página */
+    top: 0; /*Define a posição fixa no topo da janela */
+}
+
+ul li {
+    float: left; /*Flutua os itens à esquerda, alinhando-os horizontalmente */
+}
+
+ul li a {
+    display: block; /*Faz com que o link ocupe toda a área do item da lista (Bloco) */
+    color: white;
+    text-align: center;
+    padding: 14px 16px; /* Cria espaçamento interno (vertical e horizontal) */
+    text-decoration: none; /*Remove o sublinhado padrão dos links */
+}
+
+ul li a:hover {
+    background-color: #111111; /*Muda a cor de fundo ao passar o mouse (efeito hover) */
+}
+
+ul li a.active {
+    background-color:#ff0000;
+}
+
