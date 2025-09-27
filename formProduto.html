@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
+    <title>Cadastrar Produto</title>
     <link href="css/estiloNavBar.css" rel="stylesheet">
-    <link href="css/estiloAlerta.css" rel="stylesheet">
+    <link href="css/estiloForm.css" rel="stylesheet">
 </head>
 <body>
     <!-- Div para o cabeçalho, que abrigará o logotipo e slogan do protótipo -->
@@ -18,8 +18,8 @@
 
     <!-- Barra de Navegação do Protótipo (NavBar) -->
     <ul>
-        <li><a href="index.html" title="Retornar à Página Inicial" class="active">Página Inicial</a></li>
-        <li><a href="formProduto.html" title="Cadastrar um Produto">Cadastrar Produto</a></li>
+        <li><a href="index.html" title="Retornar à Página Inicial">Página Inicial</a></li>
+        <li><a href="formProduto.html" title="Cadastrar um Produto" class="active">Cadastrar Produto</a></li>
         <li><a href="#visualizarCompras.html" title="Visualizar compras efetuadas">Visualizar Compras</a></li>
         <li style="float:right; border-left: 1px solid white;"><a href="#formLogin.html" title="Acessar o Sistema">Login</a></li>
     </ul>
@@ -27,10 +27,25 @@
     <!-- Div para o conteúdo, que abrigará os elementos da página do protótipo -->
     <div class="divConteudo">
         
-        <!-- Alerta de Informação da quantidade de Produtos Cadastrados -->
-        <div class="alerta info">
-            Há 8 produtos cadastrados!
-        </div>
+        <h2 style="text-align:center">Cadastrar Produto:</h2>
+        
+        <form action="#" method="POST" enctype="multipart/form-data">
+
+            <label for="fotoProduto">Foto do Produto</label>
+            <input type="file" id="fotoProduto" name="fotoProduto" required>
+
+            <label for="nomeProduto">Nome do Produto</label>
+            <input type="text" id="nomeProduto" name="nomeProduto" placeholder="Digite o nome do Produto" required>
+
+            <label for="descricaoProduto">Descrição do Produto</label>
+            <textarea id="descricaoProduto" name="descricaoProduto" placeholder="Digite uma breve descrição" required></textarea>
+
+            <label for="valorProduto">Valor do Produto (R$)</label>
+            <input type="text" id="valorProduto" name="valorProduto" placeholder="Ex.: 199,90" required>
+
+            <input type="submit" value="Cadastrar Produto">
+
+        </form>
 
     </div>
 
